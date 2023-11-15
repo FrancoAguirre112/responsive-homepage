@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/icons/logo.favicon.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Responsive Homepage</title>
+  </head>
+
+  <body>
+    <div class="overflow-hidden bg-gradient-to-t from-[#26308C] to-main-blue">
+      <header
+        id="content"
+        class="mx-[32px] mt-[60px] opacity-0 transition-opacity md:mx-[60px] lg:mx-[116px] lg:mt-[40px]"
+      >
+        <!-- Navbar -->
+        <nav class="hidden items-center justify-between text-white md:flex">
+          <a href="/" rel="noopener noreferrer"><h1>GD.</h1></a>
+          <ul class="flex items-center gap-[60px] font-[Poppins] font-[700]">
+            <a href="/" rel="noopener noreferrer">About</a>
+            <a href="/" rel="noopener noreferrer">Services</a>
+            <a href="/" rel="noopener noreferrer">Our Work</a>
+            <a href="/" rel="noopener noreferrer" class="btn bg-btn-nav"
+              >Enrol Now</a
+            >
+          </ul>
+        </nav>
+
+        <!-- Mobile Navbar -->
+        <nav class="flex items-center justify-between text-white md:hidden">
+          <h1>GD.</h1>
+          <button id="open-menu">
+            <img src="./assets/icons/hamburgerMenu.icon.svg" alt="Menu" />
+          </button>
+        </nav>
+
+        <nav
+          id="mobile-navigation"
+          class="fixed right-0 top-0 z-50 h-0 w-0 bg-black text-white opacity-0 transition-all"
+        >
+          <div class="mx-[32px] mt-[60px] flex flex-col gap-[185px]">
+            <div class="flex justify-between">
+              <h1 class="text-transparent">GD.</h1>
+              <button id="close-menu" class="">
+                <img src="./assets/icons/close.icon.svg" alt="Close menu" />
+              </button>
+            </div>
+
+            <ul
+              id="mobile-navigation-links"
+              class="hidden flex-col items-center justify-center gap-8 font-[Poppins] text-2xl font-normal"
+            >
+              <a href="/" rel="noopener noreferrer">About</a>
+              <a href="/" rel="noopener noreferrer">Services</a>
+              <a href="/" rel="noopener noreferrer">Our Work</a>
+              <a
+                href="/"
+                rel="noopener noreferrer"
+                class="btn bg-btn-orange font-bold"
+                >Enrol Now</a
+              >
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Hero -->
+      <section
+        id="content"
+        class="mx-[32px] flex flex-col gap-5 pt-[42px] opacity-0 transition-opacity md:mx-[100px] lg:mx-[116px] lg:flex-row"
+      >
+        <article class="flex flex-col items-start gap-6 text-white md:gap-4">
+          <div class="flex flex-col gap-5">
+            <h2
+              class="font-[Raleway] text-4xl font-extrabold leading-[45px] md:text-5xl md:leading-[62px]"
+            >
+              Learn the art of Game Dev
+            </h2>
+            <p class="font-[Poppins] font-normal leading-8">
+              This is a comprehensive course on Game Development. You will learn
+              everything from generating an idea to publishing your games to
+              different platforms.
+            </p>
+          </div>
+
+          <a href="/" rel="noopener noreferrer">
+            <button class="btn gap-2 bg-btn-orange">
+              <img src="./assets/icons/edit.icon.svg" alt="Enrol Now" />
+              <span class="font-[Poppins] text-lg font-bold">Enrol Now</span>
+            </button>
+          </a>
+        </article>
+
+        <div class="grid grid-cols-2 lg:min-w-[60%]">
+          <!-- Hero cards -->
+          <div
+            class="flex flex-col justify-center gap-12 font-[Poppins] text-btn-nav md:gap-32 lg:gap-36"
+          >
+            <!-- Students enrolled -->
+            <div class="relative max-w-[206px] lg:left-10">
+              <div class="card">
+                <h4 class="text-3xl font-bold md:text-4xl">32K</h4>
+                <p class="whitespace-nowrap">Students Enrolled</p>
+              </div>
+              <div class="card-shadow"></div>
+            </div>
+
+            <!-- Rating -->
+            <div class="relative max-w-[183px] lg:mr-16">
+              <div class="card">
+                <div class="flex gap-1">
+                  <h4 class="text-3xl font-bold md:text-4xl">4.7</h4>
+                  <img src="./assets/icons/star.icon.svg" alt="Rating" />
+                </div>
+                <p class="whitespace-nowrap">Overall Rating</p>
+              </div>
+              <div class="card-shadow"></div>
+            </div>
+          </div>
+
+          <!-- Hero image -->
+          <div class="relative right-10 z-0 w-[306px] md:w-[446px]">
+            <img
+              class="object-cover"
+              src="./assets/images/heroGirl.image.webp"
+              alt="the image of a woman holding books"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Testimonials -->
+    <section
+      id="content"
+      class="mx-[32px] mt-[100px] flex flex-col items-center opacity-0 transition-opacity md:mx-[100px] lg:mx-[116px] lg:flex-row-reverse lg:gap-20"
+    >
+      <article class="flex flex-col gap-3 text-btn-nav">
+        <h2>What our students say</h2>
+        <p>
+          All students get access to all the videos and also the source code of
+          the projects. You will also have access to a private Discord channel
+          where you can discuss your doubts.
+        </p>
+
+        <!-- Large screen button -->
+        <a
+          href="/"
+          rel="noopener noreferrer"
+          class="mt-4 hidden w-full justify-start lg:flex"
+        >
+          <button id="btn-learn-more" class="btn bg-btn-orange">
+            <span>Learn More</span>
+          </button>
+        </a>
+      </article>
+
+      <!-- Cards -->
+      <div class="relative mt-10 flex w-full items-center py-7">
+        <div
+          class="absolute left-12 -z-20 h-full w-7 rounded-full bg-btn-nav"
+        ></div>
+
+        <!-- Reviews container -->
+        <div class="flex w-full flex-col gap-9">
+          <!-- Jane Cooper -->
+          <div class="relative lg:right-6">
+            <article
+              class="relative z-0 rounded-3xl bg-main-blue p-[24px_32px] font-[Raleway] font-extrabold text-white"
+            >
+              <h3>This is a great course. It helped me a lot. Thank you :)</h3>
+            </article>
+            <div class="relative -top-5 flex items-center justify-between px-8">
+              <div class="mt-7 font-[Raleway] text-btn-nav">
+                <h3 class="text-lg font-extrabold">Jane Cooper</h3>
+                <p class="text-sm font-normal">Developer. Sony</p>
+              </div>
+              <img
+                class="z-40"
+                src="./assets/images/janeCooper.image.webp"
+                alt="image of Jane Cooper"
+              />
+            </div>
+            <div
+              class="absolute top-0 -z-10 h-full w-full rounded-3xl bg-white shadow-lg shadow-[#00000033]"
+            ></div>
+          </div>
+
+          <!-- Jacob Jones -->
+          <div class="relative">
+            <article
+              class="relative z-0 rounded-3xl bg-btn-orange p-[24px_32px] font-[Raleway] font-extrabold text-white"
+            >
+              <h3>Amazing Work! Well done!</h3>
+            </article>
+            <div class="relative -top-5 flex items-center justify-between px-8">
+              <div class="mt-7 font-[Raleway] text-btn-nav">
+                <h3 class="text-lg font-extrabold">Jacob Jones</h3>
+                <p class="text-sm font-normal">Designer, Facebook</p>
+              </div>
+              <img
+                class="z-40"
+                src="./assets/images/jacobJones.image.webp"
+                alt="image of Jane Cooper"
+              />
+            </div>
+            <div
+              class="absolute top-0 -z-10 h-full w-full rounded-3xl bg-white shadow-lg shadow-[#00000033]"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile and medium screen button -->
+      <a
+        href="/"
+        rel="noopener noreferrer"
+        class="flex w-full justify-end lg:hidden"
+      >
+        <button id="btn-learn-more" class="btn bg-btn-orange">
+          <span>Learn More</span>
+        </button>
+      </a>
+    </section>
+
+    <!-- Our Courses -->
+    <section class="mt-[100px] bg-gradient-to-t from-[#26308C] to-main-blue">
+      <div
+        id="content"
+        class="flex flex-col pt-16 text-center opacity-0 transition-opacity md:mx-[100px] lg:mx-[116px]"
+      >
+        <h2 class="text-white">Our Courses</h2>
+        <div class="flex flex-col lg:flex-row lg:gap-14">
+          <!-- Game design course -->
+          <a
+            href="/"
+            rel="noopener noreferrer"
+            class="mt-16 flex w-full flex-col justify-center gap-14 transition-transform hover:scale-95 lg:flex-row"
+          >
+            <div
+              class="flex w-full flex-col justify-between rounded-3xl bg-white px-8 font-[Raleway] font-extrabold"
+            >
+              <div
+                class="max-h-[400px] min-h-[250px] w-full rounded-3xl bg-cover bg-center shadow-lg shadow-[#00000033]"
+                style="
+                  background-image: url(./assets/images/courseGameDesign.image.webp);
+                "
+              ></div>
+              <article class="my-8 flex justify-between gap-4">
+                <h3 class="text-2xl">Game Design Essentials</h3>
+                <div class="flex items-center gap-1">
+                  <img
+                    src="./assets/icons/clock.icon.svg"
+                    alt="an icon of a clock"
+                  />
+                  <h3 class="whitespace-nowrap text-base">8 HRS</h3>
+                </div>
+              </article>
+              <div class="h-2 w-full rounded-full bg-btn-nav"></div>
+            </div>
+          </a>
+
+          <!-- Unity fundamentals course -->
+          <a
+            href="/"
+            rel="noopener noreferrer"
+            class="mt-16 flex w-full flex-col justify-center gap-14 transition-transform hover:scale-95 lg:flex-row"
+          >
+            <div
+              class="flex w-full flex-col justify-between rounded-3xl bg-white px-8 font-[Raleway] font-extrabold"
+            >
+              <div
+                class="max-h-[400px] min-h-[250px] w-full rounded-3xl bg-cover bg-center shadow-lg shadow-[#00000033]"
+                style="
+                  background-image: url(./assets/images/courseUnityFundamentals.image.webp);
+                "
+              ></div>
+              <article class="my-8 flex justify-between gap-4">
+                <h3 class="text-2xl">Unity Game Engine Fundamentals</h3>
+                <div class="flex items-center gap-1">
+                  <img
+                    src="./assets/icons/clock.icon.svg"
+                    alt="an icon of a clock"
+                  />
+                  <h3 class="whitespace-nowrap text-base">8 HRS</h3>
+                </div>
+              </article>
+              <div class="h-2 w-full rounded-full bg-btn-nav"></div>
+            </div>
+          </a>
+        </div>
+
+        <!-- btn -->
+        <a
+          href="/"
+          rel="noopener noreferrer"
+          class="mx-[32px] my-14 flex justify-end md:mx-0"
+        >
+          <button id="btn-learn-more" class="btn bg-btn-orange">
+            <span>All Courses</span>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Get our app -->
+    <section
+      id="content"
+      class="mx-[32px] mb-[100px] mt-[100px] flex flex-col gap-5 opacity-0 transition-opacity"
+    >
+      <div class="flex flex-col gap-3 text-center text-btn-nav">
+        <h2>Get our app</h2>
+        <p>You can use our App for better experience on smartphones</p>
+      </div>
+
+      <!-- Stores buttons -->
+      <div
+        class="flex w-full flex-col items-center justify-center gap-7 md:flex-row"
+      >
+        <!-- App Store -->
+        <a
+          href="https://play.google.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="store-card"
+        >
+          <img src="./assets/icons/applestore.icon.svg" alt="apple store" />
+          <h3>App Store</h3>
+        </a>
+
+        <!-- Google Play -->
+        <a
+          href="https://www.apple.com/app-store/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="store-card"
+        >
+          <img src="./assets/icons/playstore.icon.svg" alt="apple store" />
+          <h3>Google Play</h3>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bg-nav">
+      <div
+        id="content"
+        class="mx-[32px] flex flex-col gap-10 whitespace-nowrap py-14 text-center font-[Poppins] opacity-0 transition-opacity md:mx-[100px] md:text-left lg:mx-[116px]"
+      >
+        <div
+          class="flex w-full flex-col flex-wrap items-center gap-10 md:flex-row md:items-start md:gap-28 lg:flex-nowrap lg:justify-between lg:gap-36"
+        >
+          <!-- Quick links -->
+          <div class="font-normal text-white">
+            <h3 class="mb-4 text-lg font-[700] text-btn-orange">Quick Links</h3>
+            <ul class="flex flex-col gap-2 md:ml-6">
+              <a href="/" rel="noopener noreferrer">About Us</a>
+              <a href="/" rel="noopener noreferrer">Contact Us</a>
+              <a href="/" rel="noopener noreferrer">Privacy Policy</a>
+              <a href="/" rel="noopener noreferrer">Terms & Conditions</a>
+            </ul>
+          </div>
+
+          <!-- Course -->
+          <div class="font-normal text-white">
+            <h3 class="mb-4 text-lg font-[700] text-btn-orange">Course</h3>
+            <ul class="flex flex-col gap-2 md:ml-6">
+              <a href="/" rel="noopener noreferrer">Log in</a>
+              <a href="/" rel="noopener noreferrer">Download</a>
+              <a href="/" rel="noopener noreferrer">All Courses</a>
+            </ul>
+          </div>
+
+          <!-- Contact us -->
+          <div class="w-full font-normal text-white">
+            <h3 class="mb-4 text-lg font-[700] text-btn-orange">Contact Us</h3>
+            <ul class="flex flex-col gap-4 md:ml-6">
+              <a
+                href="mailto:contact@email.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >contact@email.com</a
+              >
+              <div class="flex justify-center gap-7 md:justify-start">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/icons/facebookLogo.icon.svg"
+                    alt="facebook logo"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/icons/instagramLogo.icon.svg"
+                    alt="instagram logo"
+                  />
+                </a>
+              </div>
+
+              <!-- Newsletter form -->
+              <form id="newsletter">
+                <div class="flex justify-center">
+                  <input
+                    class="w-full rounded-lg px-7 py-1 text-black md:rounded-r-none"
+                    type="email"
+                    placeholder="Email Address"
+                    required
+                  />
+
+                  <div
+                    class="hidden items-center justify-center rounded-r-lg bg-white py-1 pr-1 md:flex"
+                  >
+                    <button
+                      class="hidden rounded-lg bg-btn-nav px-7 py-1 transition-all hover:brightness-75 md:flex"
+                      type="submit"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+
+                <button
+                  class="mt-3 rounded-lg bg-btn-nav px-7 py-2 transition-all hover:brightness-75 md:hidden"
+                  type="submit"
+                >
+                  Subscribe
+                </button>
+              </form>
+
+              <!-- Succesfully subscribe to the newsletter message -->
+              <ul
+                id="newsletter-thankYou"
+                class="hidden text-center md:text-left"
+              >
+                Thank you for your support!
+              </ul>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <span class="text-sm text-white md:text-base"
+          >This website is developed by GTCoding © 2021</span
+        >
+      </div>
+    </footer>
+    <!-- Load JS -->
+    <script src="./js/main.js" type="text/javascript" defer></script>
+  </body>
+</html>

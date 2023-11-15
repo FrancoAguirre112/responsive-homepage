@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  @apply font-extrabold font-["Raleway"] text-6xl md:text-[40px] sm:text-4xl;
+}
+
+h2 {
+  @apply text-3xl md:text-[40px] lg:text-6xl font-[Raleway]  font-extrabold;
+}
+
+.btn {
+  @apply flex items-center justify-center gap-3 text-lg py-3 lg:py-4 px-8 rounded-full lg:rounded-3xl text-white font-bold hover:brightness-75 hover:scale-95 transition-all;
+}
+
+p {
+  @apply text-sm md:text-base font-normal;
+}
+
+.card {
+  @apply relative z-20 flex flex-col items-center justify-center rounded-3xl bg-white px-8 py-3;
+}
+
+.card-shadow {
+  @apply absolute rounded-3xl bg-gradient-to-t from-[#3B448F] to-main-blue w-full h-full top-1.5 left-1.5 z-10;
+}
+
+nav a,
+footer a {
+  @apply hover:cursor-pointer hover:brightness-75 hover:scale-[97%] transition-all;
+}
+
+.store-card {
+  @apply flex w-[300px] items-center gap-3 bg-black px-8 py-3 font-[Poppins] text-2xl text-white hover:scale-95 transition-transform;
+}
+
+#content {
+  @apply duration-500
+}
